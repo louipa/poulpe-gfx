@@ -10,6 +10,7 @@ import {
 import BoatManager from "./boat";
 import FishManager from "./fish";
 import ObstacleManager from "./obstacles";
+import AudioManager from "./audio";
 
 export default class UnderwaterEffect {
   private scene: Scene;
@@ -20,6 +21,7 @@ export default class UnderwaterEffect {
   private boatManager: BoatManager;
   private fishManager: FishManager;
   private obstacleManager: ObstacleManager;
+  private audioManager: AudioManager;
   private isUnderwater: boolean = false;
 
   constructor(
@@ -36,6 +38,7 @@ export default class UnderwaterEffect {
     this.boatManager = boatManager;
     this.fishManager = fishManager;
     this.obstacleManager = obstacleManager;
+    this.audioManager = new AudioManager(camera);
 
     this.underwaterMaterial = new THREE.ShaderMaterial({
       uniforms: {
@@ -172,6 +175,9 @@ export default class UnderwaterEffect {
     const lastState = this.isUnderwater;
     this.isUnderwater = this.camera.position.y < 0.0;
     this.underwaterMaterial.uniforms.isUnderwater.value = this.isUnderwater;
+    this.audioManager.setUnderwater(this.isUnderwater);
+    this.audioManager.update(delta);
+
     if (lastState !== this.isUnderwater) {
       this.boatManager.setVisible(!this.isUnderwater);
       this.fishManager.setVisible(!this.isUnderwater);

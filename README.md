@@ -9,6 +9,7 @@ Ce projet est une démo vidéo utilisant Three.js pour animer un poulpe dans le 
 - lorsque la caméra est submergée, un shader est appliqué
 - en appuyant sur la barre espace, des poissons apparaissent
 - les poissons sont projetés lorsqu'ils entrent en collision avec le poulpe
+- son ambiant (en dehors de l'eau ou sous l'eau)
 
 ## 🚀 Technologies utilisées
 
