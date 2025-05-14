@@ -76,6 +76,7 @@ Louis PAINTER
 
 ## Crédits
 
+- [Shader](https://www.shadertoy.com/view/ltycRm)
 - [Modèle 3D Poisson](https://www.turbosquid.com/3d-models/fish-max-free/1126988)
 - [Modèle 3D Bâteau](https://www.turbosquid.com/3d-models/3d-cartoon-ship-model-1745776)
 - [Son Water Bubbles](https://pixabay.com/sound-effects/water-bubbles-257594/)
