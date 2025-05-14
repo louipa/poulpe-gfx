@@ -65,7 +65,7 @@ export default class FishManager {
   private loadFishModel(): void {
     const loader = new GLTFLoader();
     loader.load(
-      "fish.glb",
+      "/poulpe-gfx/fish.glb",
       (glb) => {
         glb.scene.traverse((child) => {
           if (child instanceof THREE.Mesh) {

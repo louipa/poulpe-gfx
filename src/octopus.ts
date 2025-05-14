@@ -23,7 +23,7 @@ class OctopusManager {
   private loadModel(scene: THREE.Scene): void {
     const loader = new GLTFLoader();
     loader.load(
-      "octopus.glb",
+      "/poulpe-gfx/octopus.glb",
       (gltf) => {
         this.model = gltf.scene;
         scene.add(this.model);

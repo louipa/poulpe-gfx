@@ -22,7 +22,7 @@ export default class EnvironmentManager {
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
     const loader = new RGBELoader();
 
-    loader.load("sky.hdr", (texture) => {
+    loader.load("/poulpe-gfx/sky.hdr", (texture) => {
       const envMap = pmremGenerator.fromEquirectangular(texture).texture;
       scene.background = envMap;
       scene.environment = envMap;

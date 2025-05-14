@@ -26,11 +26,7 @@ class Application {
       this.sceneManager.getScene(),
       this.sceneManager.getRenderer()
     );
-    this.boatManager = new BoatManager(
-      this.sceneManager.getScene(),
-      this.waterManager.getWater(),
-      this.obstacleManager
-    );
+    this.boatManager = new BoatManager(this.sceneManager.getScene());
 
     this.environmentManager.onEnvironmentLoaded((envMap) => {
       this.fishManager = new FishManager(this.sceneManager.getScene(), envMap);

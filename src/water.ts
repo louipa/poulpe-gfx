@@ -11,9 +11,12 @@ class WaterManager {
     this.water = new Water(waterGeometry, {
       textureWidth: 512,
       textureHeight: 512,
-      waterNormals: new TextureLoader().load("waternormals.jpg", (texture) => {
-        texture.wrapS = texture.wrapT = RepeatWrapping;
-      }),
+      waterNormals: new TextureLoader().load(
+        "/poulpe-gfx/waternormals.jpg",
+        (texture) => {
+          texture.wrapS = texture.wrapT = RepeatWrapping;
+        }
+      ),
       sunDirection: new THREE.Vector3(),
       sunColor: 0xffffff,
       waterColor: 0x545aa8,
