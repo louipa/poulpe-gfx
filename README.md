@@ -2,6 +2,8 @@
 
 Ce projet est une démo vidéo utilisant Three.js pour animer un poulpe dans le cadre d'un cours à l'IMT Atlantique.
 
+Version live : https://louipa.github.io/poulpe-gfx/
+
 ## 🐙 Fonctionnalités
 
 - poulpe animé
