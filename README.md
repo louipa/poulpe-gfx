@@ -16,6 +16,7 @@ Ce projet est une démo vidéo utilisant Three.js pour animer un poulpe dans le 
 - [Three.js](https://threejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
+- [Blender](https://www.blender.org/)
 
 ## 📋 Prérequis
 
@@ -53,7 +54,7 @@ Le projet sera accessible à l'adresse `http://localhost:5173`
 
 ```
 ├── src/              # Code source
-├── public/           # Assets statiques
+├── public/           # Assets statiques et projet blender
 ├── index.html        # Point d'entrée HTML
 ├── script.ts         # Script principal
 ├── tsconfig.json     # Configuration TypeScript
